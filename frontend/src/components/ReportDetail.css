@@ -1,0 +1,563 @@
+/* /* /* /* /* .report-detail-wrapper {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: #e2e8f0;
+}
+
+/* Header */
+.report-header {
+  padding: 16px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.report-header h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.report-header p {
+  font-size: 13px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+/* Headings */
+.review-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.code-heading {
+  font-size: 15px;
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.error-heading {
+  color: #f87171; /* Soft red */
+}
+
+.fix-heading {
+  color: #4ade80; /* Light green */
+}
+
+.lang-detected {
+  color: #10b981;
+}
+
+.separator {
+  margin: 0 8px;
+}
+
+/* Code blocks */
+.code-block {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  white-space: pre-wrap;
+  color: #e5e7eb;
+  overflow-y: auto;
+}
+
+.code-highlight {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* No selection */
+.report-no-selection {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Scrollbar */
+.code-block::-webkit-scrollbar,
+.report-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.code-block::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 5px;
+}
+
+.code-block::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+} */
+
+.report-detail-wrapper {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px;
+  color: #e2e8f0;
+}
+
+.report-header {
+  padding: 15px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.report-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Slight shift to right */
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-left: 5px; /* shift applied */
+  margin-bottom: 4px;
+}
+
+.review-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px; /* reduced by few px */
+  padding: 10px; /* less padding */
+  margin-bottom: 10px;
+}
+
+.review-heading {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.error-heading {
+  color: #f87171;
+}
+
+.fix-heading {
+  color: #4ade80;
+}
+
+.suggestion-heading {
+  color: #fde047; /* yellow */
+}
+
+.code-block {
+  font-size: 13px;
+}
+
+.code-highlight {
+  margin-top: 5px;
+  border-radius: 8px;
+} */
+
+
+.review-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 7px;
+  padding: 8px; /* Reduced for compact layout */
+  margin-bottom: 8px;
+}
+
+.code-block.compact-block {
+  max-height: 200px; /* Smaller height */
+  padding: 10px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.section-title {
+  margin-left: 8px; /* Slight shift to the right */
+}
+
+.report-content {
+  padding: 12px;
+  gap: 12px;
+}
+
+.code-highlight {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+} */
+
+
+.review-box {
+  width: 88%;
+  margin-left: 15px;
+}
+.compact-block {
+  max-height: 150px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.review-heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.error-heading { color: #ef4444; }
+.fix-heading { color: #10b981; } */
+
+
+
+/* ===========================
+   📌 Main Wrapper
+=========================== */
+.report-detail-wrapper {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===========================
+   📌 Header Section
+=========================== */
+.report-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.report-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.report-header p {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.separator {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+.lang-detected {
+  color: #10b981;
+  font-weight: 500;
+}
+
+/* ===========================
+   📌 Section Headings
+=========================== */
+.review-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-left: 10px; /* Slight shift to right */
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* ===========================
+   📌 Review Boxes (Errors/Fixes/Suggestions)
+=========================== */
+.review-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px auto;
+  width: 88%; /* Slightly smaller */
+}
+
+/* Headings inside boxes */
+.code-heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.error-heading {
+  color: #ef4444;
+}
+
+.fix-heading {
+  color: #10b981;
+}
+
+.suggestion-heading {
+  color: #facc15;
+}
+
+/* Compact code blocks inside boxes */
+.code-block.compact-block {
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ===========================
+   📌 General Code Styling
+=========================== */
+.code-highlight {
+  border-radius: 6px;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.corrected-code {
+  border-left: 3px solid #10b981; /* Visual cue for corrected code */
+}
+
+/* ===========================
+   📌 Main Content
+=========================== */
+.report-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+/* ===========================
+   📌 No Selection Message
+=========================== */
+.report-no-selection {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* ===========================
+   📌 Scrollbar Styling
+=========================== */
+.code-block::-webkit-scrollbar,
+.report-content::-webkit-scrollbar {
+  width: 6px;
+}
+.code-block::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 5px;
+}
+.code-block::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+
+
+
+
+
+
+
+
+.review-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px auto;
+  width: 88%;
+}
+
+.compact-block {
+  max-height: 140px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.error-heading { color: #ef4444; }
+.fix-heading { color: #10b981; }
+.suggestion-heading { color: #facc15; }
+
+.report-heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+} */
+
+
+
+/* ===========================
+   📌 Main Wrapper
+=========================== */
+.report-detail-wrapper {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===========================
+   📌 Header Section
+=========================== */
+.report-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.report-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.report-header p {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.separator {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+/* ===========================
+   📌 Review Sections
+=========================== */
+.review-section {
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+
+.error-title {
+  color: #ef4444; /* 🔴 Errors */
+}
+.fix-title {
+  color: #10b981; /* 🛠 Fixes */
+}
+.suggestion-title {
+  color: #facc15; /* 💡 Suggestions */
+}
+.corrected-title {
+  color: #38bdf8; /* 📦 Corrected Code */
+}
+
+/* ===========================
+   📌 Boxes for Errors, Fixes & Suggestions
+=========================== */
+.review-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 55px;
+  width: 90%;
+  margin-left: 10px;
+}
+
+.section-text {
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: "JetBrains Mono", monospace;
+  white-space: pre-wrap;
+}
+
+/* If no sections exist */
+.no-data {
+  font-size: 13px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/* ===========================
+   📦 Syntax Highlighter Code Style
+=========================== */
+.code-highlight {
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.corrected-code {
+  border-left: 3px solid #10b981; /* Green highlight for corrected code */
+}
+
+/* ===========================
+   🧾 General Content
+=========================== */
+.report-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+/* ===========================
+   ❌ No Review Selected
+=========================== */
+.report-no-selection {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* ===========================
+   📜 Scrollbar Styling
+=========================== */
+.review-box::-webkit-scrollbar,
+.report-content::-webkit-scrollbar,
+.code-highlight::-webkit-scrollbar {
+  width: 6px;
+}
+
+.review-box::-webkit-scrollbar-thumb,
+.code-highlight::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 5px;
+}
+
+.review-box::-webkit-scrollbar-thumb:hover,
+.code-highlight::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

@@ -1,0 +1,119 @@
+/* Navbar fully styled – Modern and Elegant */
+
+.navbar {
+  width: 95.8%;
+  padding: 14px 28px;
+  background: rgba(30, 41, 59, 0.85);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  color: #f8fafc;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Gradient CR Logo */
+.logo-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3b82f6, #0ea5e9, #10b981);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* Title & Subtitle */
+.navbar-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.navbar-subtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Username Display */
+.user-greeting {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.user-greeting strong {
+  color: #38bdf8;
+}
+
+/* Modern Logout Button */
+.logout-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.8);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(220, 38, 38, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .navbar-title {
+    font-size: 16px;
+  }
+
+  .navbar-subtitle {
+    font-size: 10px;
+  }
+
+  .logo-box {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .logout-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .user-greeting {
+    font-size: 12px;
+  }
+}

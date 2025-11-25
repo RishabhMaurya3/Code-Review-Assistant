@@ -1,0 +1,65 @@
+.dashboard-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  color: white;
+}
+
+/* Left Panel */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Past Reviews Box */
+.reviews-section {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviews-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.reviews-header span {
+  font-size: 12px;
+  background: #1e293b;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Right Panel – Review details */
+.right-panel {
+  min-height: 400px;
+}
+
+.loading-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
