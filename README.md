@@ -2,7 +2,7 @@
 
 A **smart AI-powered code review tool** built with **MERN Stack** and **local LLM integration** using **Ollama (Phi-3 model)**.
 
-🧠 It analyzes code, detects errors, suggests fixes, and provides corrected code — similar to ChatGPT and VSCode AI assistants, but *fully locally powered*.
+🧠 It analyzes code, detects errors, suggests fixes, and provides corrected code — similar to VSCode formatting, but *fully locally powered*.
 
 ---
 
@@ -46,6 +46,37 @@ A **smart AI-powered code review tool** built with **MERN Stack** and **local LL
 | GET    | `/api/reviews/:id`   | Get specific review    |
 | POST   | `/api/auth/login`    | Login                  |
 | POST   | `/api/auth/register` | Register               |
+
+---
+## 🚀 LLM Code Review Prompt
+
+This is the prompt which is being sent by the backend. You are not required to write this prompt.
+              
+              👇
+              
+You are an expert Java software engineer.
+
+Review the code and respond ONLY using this exact format (no extra explanations):
+
+🛑 Errors:
+- error1
+- error2
+
+🔧 Fixes:
+- fix1
+- fix2
+
+💡 Suggestions:
+- suggestion1
+- suggestion2
+
+📦 Corrected Code:
+
+(only corrected code without comments)
+
+Code:
+
+(contains code which you will upload for review either by pasting or file upload)
 
 ---
 ## 🛠️ Installation & Setup
@@ -116,3 +147,4 @@ ollama run phi3
 
 
 💡 Now visit → http://localhost:5173
+
